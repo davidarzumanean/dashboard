@@ -1,0 +1,36 @@
+$horizontalPadding: rem(30);
+
+.modalMask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+
+    .modalContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: $contentBackground;
+        border-radius: rem(5);
+        max-height: 95%;
+    }
+    .modalHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $borderColor;
+        padding: rem(20) $horizontalPadding;
+    }
+    .modalBody {
+        padding: $horizontalPadding;
+        overflow: auto;
+    }
+    .modalFooter {
+        border-top: 1px solid $borderColor;
+        padding: rem(15) $horizontalPadding;
+    }
+}

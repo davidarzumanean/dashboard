@@ -1,0 +1,18 @@
+.searchContainer {
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: rem(10);
+        top: 50%;
+        transform: translateY(-50%);
+        color: $placeholderColor;
+        z-index: 1;
+    }
+    input { 
+        padding: rem(10) rem(40);
+        border: none;
+        background-color: darken($contentBackground, 8%);
+        font-size: rem(18);
+    }
+}

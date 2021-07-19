@@ -1,0 +1,41 @@
+.inputContainer {
+    position: relative;
+
+    label {
+        padding-left: rem(15);
+        margin-bottom: rem(5);
+        font: $f;
+        font-size: rem(16);
+    }
+    input, select { 
+        &[type="text"] {
+            width: 100%;
+        }
+        padding: rem(10) rem(15);
+        border: 1px solid $borderColor;
+        border-radius: rem(5);
+        font-size: rem(16);
+        @include placeholder {
+            color: $placeholderColor;
+        }
+    }
+    &.radio, &.checkbox {
+        span {
+            font: $f;
+            font-size: rem(16);
+        }
+    }
+    &.checkbox input {
+        vertical-align: middle;
+    }
+    &.text, &.number, &.select {
+        label {
+            display: block;
+        }
+    }
+    .error {
+        color: $error;
+        font: $f;
+        font-size: rem(12);
+    }
+}

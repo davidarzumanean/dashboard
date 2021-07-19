@@ -1,0 +1,18 @@
+.contactsContainer {
+    .tableWrapper {
+        padding: rem(20);
+        margin-top: rem(15);
+        background-color: $contentBackground;
+    }
+    .nameContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        width: rem(50);
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: rem(15);
+    }
+}

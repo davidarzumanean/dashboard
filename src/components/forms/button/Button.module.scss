@@ -1,0 +1,22 @@
+.button {
+    border: none;
+    border-radius: rem(5);
+    font: $f;
+    font-size: rem(16);
+    color: $activeTextColor;
+    padding: rem(7) rem(15);
+    cursor: pointer;
+    transition: background-color .3s ease 0s;
+    &.primary {
+        background-color: $accentColor;
+        &:hover {
+            background-color: darken($accentColor, 5%);  
+        }
+    }
+    &.secondary {
+        background-color: $textColor;
+        &:hover {
+            background-color: darken($textColor, 5%);  
+        }
+    }
+}

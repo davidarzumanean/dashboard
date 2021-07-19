@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: rem(15) 0;
+
+    .page {
+        &:not(svg) {
+            padding: rem(10) 0;
+            font: $f;
+        }
+        margin: 0 rem(10);
+        width: rem(40);
+        height: rem(40);
+        border-radius: rem(5);
+        background-color: $accentColor;
+        font-size: rem(16);
+        color: $textColor;
+        text-align: center;
+        transition: background-color .3s ease 0s, color .3s ease 0s;
+        cursor: pointer;
+        
+        &:hover, &.active {
+            background-color: $accentActiveColor;
+            color: $activeTextColor
+        }
+    }
+    .disabled {
+        pointer-events: none;
+        opacity: .6;
+      }
+}

@@ -1,0 +1,36 @@
+.sidebar {
+    background-color: $accentColor;
+    width: rem(220);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 0 rem(30);
+        border-bottom: 1px solid darken($accentColor, 10%);
+        font-family: $f;
+        font-weight: 900;
+        font-size: rem(25);
+        color: $activeTextColor;
+        text-decoration: none;
+        height: $headerHeight;
+    }
+
+    .link {
+        display: block;
+        padding: rem(20) rem(30);
+        font-size: rem(16);
+        color: $textColor;
+        text-decoration: none;
+        transition: color .3s ease 0s, background-color .3s ease 0s;
+        &.active {
+            color: $activeTextColor;
+            background-color: $accentActiveColor;
+        }
+        &:hover {
+            color: $activeTextColor;
+        }
+    }
+}

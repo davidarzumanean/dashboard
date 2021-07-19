@@ -1,0 +1,52 @@
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+}
+
+@mixin not-mobile {
+    @media screen and (min-width: 769px) {
+      @content;
+    }
+}
+
+@function rem($size) {
+    $remSize: $size / 19;
+    @return #{$remSize}rem;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    @content;
+    opacity: 1;
+  }
+}
+
+$f: 'Roboto', sans-serif;
+
+$accentColor: #2D2B4B;
+$accentActiveColor: #233356;
+$mainText: #4D5664;
+$placeholderColor: #9B9A9B;
+
+$headerHeight: rem(70);
+$borderColor: #E7E3E3;
+$mainBackground: #F6F7F8;
+$contentBackground: #ffffff;
+$headerBackground: #ffffff;
+$textColor: #ABAEB9;
+$activeTextColor: #ffffff;
+
+$error: #f00;

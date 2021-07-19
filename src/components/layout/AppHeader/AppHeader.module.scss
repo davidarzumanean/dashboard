@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: $headerHeight;
+    padding: 0 rem(30);
+    border-bottom: 1px solid $borderColor;
+    background-color: $contentBackground;
+    .pageName {
+        font-family: $f;
+        font-size: rem(22);
+        font-weight: 600;
+        color: $mainText;
+        text-transform: capitalize;
+    }
+}

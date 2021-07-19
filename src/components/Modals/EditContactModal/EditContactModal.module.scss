@@ -1,0 +1,23 @@
+.editContactModal {
+    .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: rem(10);
+    }
+    .col3 {
+        grid-template-columns: repeat(3, auto);
+        align-items: end;
+    }
+
+    .modalBody > div:not(:last-child) {
+        margin-bottom: rem(20);
+    }
+
+    .modalFooter {
+        display: flex;
+        justify-content: flex-end;
+        button:first-child {
+            margin-right: rem(15);
+        }
+    }
+}

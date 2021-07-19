@@ -1,0 +1,12 @@
+.appWrapper {
+    display: flex;
+    min-height: 100%;
+
+    .contentWrapper {
+        flex-grow: 1;
+        background-color: $mainBackground;
+    }
+    .mainContent {
+        padding: rem(15) rem(30) rem(15) rem(250);
+    }
+}

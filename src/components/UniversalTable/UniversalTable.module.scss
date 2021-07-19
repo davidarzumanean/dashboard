@@ -1,0 +1,10 @@
+ .universalTable {
+    width: 100%;
+    background-color: $mainBackground;
+    border-collapse: collapse;
+
+    .tableCell {
+        padding: rem(7) rem(15);
+        border: 1px solid $borderColor;
+    }
+ }
